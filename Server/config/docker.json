@@ -1,0 +1,4 @@
+{
+  "db": "mongodb://database/accountable",
+  "amqp": "amqp://rabbitMQ:5672"
+}

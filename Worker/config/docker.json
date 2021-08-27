@@ -1,0 +1,5 @@
+{
+  "amqp": "amqp://rabbitMQ:5672",
+  "server": "http://server:3000",
+  "bank": "http://bank-api-mock:4000"
+}
