@@ -75,11 +75,6 @@ Change directory to the project's root (where `docker-compose.yml` is ) and run 
 
 $ docker-compose up --scale worker=5
 
-- the option `scale` refer to the number of instances that will be run of certain service
-
-- Server will run by default on port `3000`, and is accessible from `http://localhost:3000`
-- Bank API Mock will run by default on port `4000`, and is accessible from `http://localhost:4000`
-
 ## API Documentation
 
 - find the attached accountable.postman_collection.json file from the project's root directory

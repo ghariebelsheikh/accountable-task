@@ -1,7 +1,7 @@
 import fs from "fs";
 import User from "../models/user.model";
 
-const logStream = fs.createWriteStream("task_technical_failure.log", {
+const logStream = fs.createWriteStream("logs/failure.log", {
   flags: "a",
 });
 

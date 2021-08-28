@@ -16,7 +16,7 @@ services:
       - "15672:15672"
 
   database:
-    image: "bitnami/mongodb:4.1.1"
+    image: "mongo:5"
     restart: on-failure
     networks:
       - accountable-network
@@ -29,7 +29,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - "mongo-data:/bitnami"
+      - "mongo-data:/data/db"
     environment:
       - MONGODB_USERNAME=admin
       - MONGODB_PASSWORD=P@ssw0rd
@@ -83,6 +83,8 @@ services:
       - rabbitMQ
     ports:
       - "3000:3000"
+    volumes:
+      - "./logs/:/app/logs/"
     environment:
       NODE_ENV: docker
       PORT: 3000
